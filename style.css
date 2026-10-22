@@ -1,0 +1,27 @@
+:root{--bg:#fafaf7;--fg:#1b1b1b;--muted:#666;--accent:#b4531f;--card:#fff;--line:#e4e2da}
+@media (prefers-color-scheme:dark){:root{--bg:#141414;--fg:#f0eee8;--muted:#a09d95;--accent:#e08a57;--card:#1d1d1d;--line:#2d2d2d}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.7 Georgia,"Times New Roman",serif}
+a{color:var(--accent)}
+header{border-bottom:1px solid var(--line);padding:1rem 1.25rem;display:flex;flex-wrap:wrap;gap:.75rem 2rem;align-items:center;justify-content:space-between;max-width:960px;margin:auto}
+.brand{font-size:1.4rem;font-weight:bold;letter-spacing:.04em;text-decoration:none;color:var(--fg)}
+nav{display:flex;flex-wrap:wrap;gap:1.1rem;font:15px/1 system-ui,sans-serif;text-transform:uppercase;letter-spacing:.08em}
+nav a{text-decoration:none;color:var(--muted);padding-bottom:4px}
+nav a:hover,nav a[aria-current]{color:var(--fg);border-bottom:2px solid var(--accent)}
+main{max-width:960px;margin:auto;padding:2.5rem 1.25rem 3rem}
+h1,h2{line-height:1.2}
+h1{font-size:2.4rem;margin:0 0 1rem}
+blockquote{margin:0 0 2rem;padding-left:1.25rem;border-left:4px solid var(--accent);font-size:1.4rem;font-style:italic}
+blockquote cite{display:block;font-size:1rem;color:var(--muted);font-style:normal}
+.roles{list-style:none;padding:0;display:grid;gap:.5rem;font:15px system-ui,sans-serif;color:var(--muted)}
+.cards{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:1.5rem 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:1.25rem}
+.card h3{margin-top:0}
+.book{display:grid;gap:2rem;grid-template-columns:minmax(0,280px) 1fr;align-items:start}
+.cover{aspect-ratio:2/3;width:100%;border-radius:6px;background:linear-gradient(135deg,var(--accent),#3a2a20);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding:1rem;font-size:1.4rem;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+img.cover{object-fit:cover;padding:0}
+.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;padding:.7rem 1.4rem;border-radius:6px;font:600 15px system-ui,sans-serif;margin:.25rem .5rem .25rem 0}
+.btn.alt{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+.meta{font:15px system-ui,sans-serif;color:var(--muted)}
+footer{border-top:1px solid var(--line);text-align:center;padding:1.5rem;font:14px system-ui,sans-serif;color:var(--muted)}
+@media(max-width:700px){.book{grid-template-columns:1fr}.cover{max-width:240px}}
