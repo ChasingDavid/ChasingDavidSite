@@ -15,22 +15,24 @@
 
 window.SITE = {
 
-  /* ---------- Shown on every page ---------- */
+  /* ---------- Site-wide: header and footer ---------- */
   site: {
     name: "Dav Lewis",
     instagram: "https://instagram.com/dav.lewis.official",
     facebook: "https://www.facebook.com/1055900717862906",
-    // Menu links. Change the label to rename one, delete a line to hide it.
+    // Menu links jump to a section on the page. Change the label to rename one.
+    // Delete a line to hide that link (the section itself stays; to remove a
+    // section too, delete its block below). The order here is the order on the page.
     menu: [
-      { label: "Home",         file: "index.html",       page: "home" },
-      { label: "Media",        file: "media.html",       page: "media" },
-      { label: "Book",         file: "book.html",        page: "book" },
-      { label: "Philanthropy", file: "philanthropy.html", page: "philanthropy" },
-      { label: "Contact",      file: "contact.html",     page: "contact" }
+      { label: "Home",         section: "home" },
+      { label: "Media",        section: "media" },
+      { label: "Book",         section: "book" },
+      { label: "Philanthropy", section: "philanthropy" },
+      { label: "Contact",      section: "contact" }
     ]
   },
 
-  /* ---------- HOME PAGE ---------- */
+  /* ---------- HOME SECTION ---------- */
   home: {
     quote: "Being Good to others through Service is the Ultimate Gift to Self",
     quoteBy: "D. Lewis",
@@ -46,7 +48,7 @@ window.SITE = {
       "Lead Actor: Adidas Adizero campaign",
       "Activist, Founder, CEO: Woke World, 2nd Chances.Life"
     ],
-    // Set show to false to hide the book box on the home page.
+    // Set show to false to hide the book box in this section.
     bookBox: {
       show: true,
       title: "New: the book",
@@ -55,7 +57,7 @@ window.SITE = {
     }
   },
 
-  /* ---------- MEDIA PAGE ---------- */
+  /* ---------- MEDIA SECTION ---------- */
   media: {
     heading: "Media",
     intro: "Selected work from in front of and behind the camera.",
@@ -66,7 +68,7 @@ window.SITE = {
     ]
   },
 
-  /* ---------- BOOK PAGE ---------- */
+  /* ---------- BOOK SECTION ---------- */
   book: {
     heading: "The Book",
     title: "Your Book Title Here",
@@ -87,7 +89,7 @@ window.SITE = {
     ]
   },
 
-  /* ---------- PHILANTHROPY PAGE ---------- */
+  /* ---------- PHILANTHROPY SECTION ---------- */
   philanthropy: {
     heading: "Philanthropy",
     intro: "Dav Lewis has dedicated his life to giving back to local communities through his nonprofit and his conscious clothing brand.",
@@ -97,7 +99,7 @@ window.SITE = {
     ]
   },
 
-  /* ---------- CONTACT PAGE ---------- */
+  /* ---------- CONTACT SECTION ---------- */
   contact: {
     heading: "Contact",
     intro: "For bookings, speaking, press, and partnerships, reach out below.",
