@@ -1,0 +1,20 @@
+[
+  {
+    "title": "SAMPLE: Community Screening + Q&A",
+    "date": "2026-12-05",
+    "time": "7:00 PM",
+    "location": "Venue Name, City, ST",
+    "text": "Replace or delete this sample event.",
+    "url": "https://example.com/tickets",
+    "linkText": "Get tickets"
+  },
+  {
+    "title": "SAMPLE: Book Signing",
+    "date": "2027-01-16",
+    "time": "2:00 PM",
+    "location": "Bookstore Name, City, ST",
+    "text": "Replace or delete this sample event.",
+    "url": "",
+    "linkText": "Details"
+  }
+]
