@@ -38,7 +38,7 @@ window.SITE = {
     heading: "Dav Lewis",
     // Big photo behind the top of the page, e.g. "images/hero.jpg". Leave "" for a plain top.
     heroImage: "",
-    tagline: "Actor, director, producer, activist.",
+    tagline: "Author, Actor, Director, Producer, Activist.",
     bookBox: { show: true, title: "New: the book", text: "Read about Dav’s book and where to get a copy.", buttonText: "See the book" }
   },
 
@@ -139,6 +139,6 @@ window.SITE = {
   contact: {
     heading: "Contact",
     intro: "For bookings, speaking, press, and partnerships, reach out below.",
-    email: "you@example.com"
+    email: "info@davlewis.com"
   }
 };
